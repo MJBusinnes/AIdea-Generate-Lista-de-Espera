@@ -1,0 +1,234 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap')
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Sora', sans-serif;
+    background: #241631;
+    padding: 10px;
+}
+
+.head {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.head img {
+  width: 180px;
+  max-height: 50px;
+    margin: 60px;
+}
+
+.head p {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.card {
+  display: flex;
+  width: 97%;
+    background: linear-gradient(270deg, #FF4DA9 0%, #F6846D 100%);
+    padding: 20px;
+    justify-content: center;
+    margin: 0 180px 0 5px;
+    padding-top: 0;
+    padding-bottom: 0px;
+    border-radius: 16px;
+    
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card img {
+    max-width: 280px;
+    margin-top: 50%;
+    margin-bottom: auto;
+    padding-bottom: auto;
+    flex-wrap: wrap;
+}
+
+.card h2 {
+  width: 85%;
+    font-size: 32px;
+    margin: 16% 0 45px 20px;
+}
+
+.card button {
+  display: flex;
+  background: #312140;
+  color: #fff;
+  text-align: center;
+    width: auto;
+    font-size: 18px;
+    padding: 20px 10px 24px 10px;
+    margin: 15px 40px 30px 50px;
+    cursor: pointer;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+
+.icons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.icons-container h3 {
+    margin-right: 10px;
+}
+
+.icon {
+    font-size: 24px;
+    color: transparent;
+  background-image: linear-gradient(270deg, #FF4DA9 0%, #F6846D 100%);
+  -webkit-background-clip: text; /* Aplica o gradiente dentro do texto do ícone para navegadores WebKit (Safari, Chrome, etc.) */
+  background-clip: text; /* Aplica o gradiente dentro do texto do ícone */
+  margin: 0 10px; /* Espaçamento entre os ícones */
+}
+
+footer {
+    text-align: center;
+    color: #F6846D;
+    border-top: 1px solid #fff;
+    padding-top: 10px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* Media queries */
+
+/* Dispositivos menores que 1024px */
+@media only screen and (max-width: 1024px) {
+
+    .card {
+      width: 95%;
+    }  
+     
+    .head img {
+        width: 150px;
+    }
+
+    .card button {
+      width: auto;
+      margin: 15px 0;
+      padding: 15px 0;
+    }
+}
+
+/* Dispositivos menores que 768px */
+@media only screen and (max-width: 768px) {
+   
+    .card {
+      width: 93%;
+    }
+
+    .head img {
+        width: 150px;
+    }
+
+    .card img {
+        max-width: 250px;
+    }
+
+    .card h2 {
+        font-size: 16px;
+    }
+
+    .card button {
+      width: auto;
+        font-size: 14px;
+    }
+
+    .icons-container h3 {
+        font-size: 16px;
+    }
+
+    .icon {
+        font-size: 20px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+}
+
+/* Dispositivos menores que 450px */
+@media only screen and (max-width: 450px) {
+
+  .card {
+    width: 89%
+  }
+
+  .head img {
+    width: 150px;
+  }
+
+    .head h1 {
+      font-size: 24px;
+    }
+
+    .card img {
+        max-width: 215px;
+        padding-bottom: 0;
+    }
+
+    .card h2 {
+        font-size: 14px;
+    }
+
+    .card button {
+      width: 85%;
+      height: 12%;
+        font-size: 11px;
+    }
+
+    .icons-container h3 {
+        font-size: 14px;
+    }
+
+    .icon {
+        font-size: 18px;
+    }
+
+    footer {
+        font-size: 10px;
+    }
+}
+
+
+
+@media only screen and (max-width: 375px) {
+
+  .card {
+    width: 86%
+  }
+
+  .head img {
+    width: 150px;
+  }
+
+  .card h2 {
+    width: 85%;
+      font-size: 14px;
+      margin: 60px 40px 45px 20px;
+  }
+
+  .card button {
+    margin-left: 15%; 
+  }
+}
+
+</style>

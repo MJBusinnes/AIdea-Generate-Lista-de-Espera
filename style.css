@@ -1,0 +1,311 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap')
+
+/* Reset de estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Sora', sans-serif;
+  background: #241631;
+  padding: 75px 27px 21px 280px;
+}
+
+/* Seção Hero */
+section .hero {
+  display: flex;
+  color: #B0A6BC;
+  flex-direction: row;
+  width: 100%;
+  max-width: 818px;
+  height: 482px;
+  margin: auto;
+  min-width: 365px;
+  align-items: center;
+  align-content: center;
+  gap: 40px;
+}
+
+h1 {
+  font-size: 36px;
+  background: linear-gradient(94deg, #FF817D -3.03%, #FF549E 87.57%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h2 {
+  font-size: 25px;
+  margin: 24px 0 24px 0px;
+  padding-right: 30px;
+  background: linear-gradient(94deg, #FF817D -3.03%, #FF549E 87.57%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} 
+
+p {
+  font-size: 24px;
+  color: #B0A6BC;
+}
+
+/* LOGO */
+.hero img {
+
+  width: 180px;
+  max-height: 70px;
+  margin-right: 70px;
+  color: #B0A6BC;
+  margin: auto;
+}
+
+.text-and-image {
+  display: flex;
+  align-items: center;
+  color: #B0A6BC;
+  max-width: 100%;
+  border-radius: 20px;
+  height: auto;
+  padding: 40px 40px 40px 20px;
+  margin: 45px 0 30px 0px;
+  gap: 40px;
+  
+  background-image: url("img/footer-img.png");
+  background-size: cover;
+  background-position: center;
+  width: 86%;
+}
+
+.text-and-image h2, p {
+  align-items: center;
+  color: #B0A6BC;
+  margin: 15px 40px 30px 0; 
+} 
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* IMAGE HERO */
+.hero-image {
+  width: 378px;
+  height: 250px;
+}
+
+form {
+  display: flex;
+  align-items: flex-start;
+  text-color: #fff;
+  margin-top: 20px;
+  gap: 14px;
+}
+
+/* Layout do botão */
+input {
+  display: flex;
+  flex-direction: column;
+  width: 288px;
+  height: 54px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(217, 217, 217, 0.20);
+}
+
+::placeholder {
+  color: #fff;  
+}
+
+.layout-button {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  align-items: flex-start;
+  gap: 10px;
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+}
+
+button {
+  border-radius: 10px;
+  background: linear-gradient(270deg, #FF4DA9 0%, #F6846D 100%);
+  color: #312140;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+form button {
+  width: 288px;
+  height: 55px;
+  width: auto;
+  padding-left: 10px; 
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+.card-1 h2 {
+  width: 100%;
+  height: 20%;
+}
+
+.card-1 {
+  display: flex;
+  flex-direction: row;
+  margin-right: 70%;
+  color: #fff;
+  align-items: flex-start;
+}
+
+.card-list {
+  background: #312140;
+  color: white;
+  width: 324px;
+  height: 148px;
+  padding: 25px 18px 5% 20px;
+  margin: 40px 0 25px 10px;
+  border-radius: 10px;
+  gap: 5px;
+  flex-shrink: 0;
+}
+
+/* FAQ */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  margin: 16px 25px 0 18px;
+  width: 88%;
+  border: none;
+  align-items: center;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #ccc;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  margin: 0 5px 0 5px;
+  border-radius: 14px;
+  color: #B0A6BC;
+  background-color: #312140;
+  width: 90%;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+/* Rodapé */
+footer {
+  background-image: url("img/footer-img.png");
+  background-size: cover;
+  background-position: center;
+  width: 80%;
+  color: #F6846D;
+  margin-top: 6%;
+  padding: 12px 0 12px 10%;
+  border-radius: 10px;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 250%;
+}
+
+footer h3 {
+  color: #F6846D 87.57%;
+}
+
+footer button {
+  width: 280px;
+  height: 54px;
+  cursor: pointer;
+}
+
+/* Adicione estas media queries para tornar o site responsivo */
+
+/* Para dispositivos com largura até 768px */
+@media only screen and (max-width: 768px) {
+  body {
+    justtify-content: center;
+    padding: 75px 15px 21px 20px;
+  }
+  
+  .hero {
+    flex-direction: column;
+    height: auto;
+    max-width: 100%;
+    align-items:center;
+  }
+
+  .hero img {
+    margin-right: 0;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .text-and-image, .content {
+    max-width: 100%;
+    padding: 20px 15px;
+  }
+
+  form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  input, form button {
+    width: 100%;
+  }
+
+  .layout-button {
+    position: static;
+    margin-top: 20px;
+  }
+
+  .card-1 {
+    flex-direction: column;
+    margin-right: 90px;
+    width: 100%;
+  }
+
+  .accordion {
+    align-items: center;
+  }
+}
+
+
+/* Adapte conforme necessário para outras seções ou elementos */
+
+</style>
